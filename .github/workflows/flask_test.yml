@@ -2,7 +2,7 @@ name: Flask App Tests
 
 # add trigger
 on:
-  pull-request:
+  pull_request:
     branches:
       - main
 
