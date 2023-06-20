@@ -16,7 +16,7 @@ def return_reversed_string(random_string):
 
 @app.route('/get-mode')
 def get_mode():
-    # return the env mode .eg. dev, prod, .etc
+    # return the environment mode .eg. dev, prod, .etc
     return os.environ.get("MODE")
 
 
