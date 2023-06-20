@@ -11,10 +11,12 @@ app = Flask(__name__)
  
 @app.route('/<random_string>')
 def return_reversed_string(random_string):
+    # take a string, reverse and return it 
     return "".join(reversed(random_string))
 
 @app.route('/get-mode')
 def get_mode():
+    # get the environment mode .eg. dev, prod, .etc
     return os.environ.get("MODE")
 
 
