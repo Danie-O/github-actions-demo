@@ -6,6 +6,7 @@ import unittest
 class TestMain(unittest.TestCase):
     # test route functions in main
     def test_return_reversed_string(self):
+        # test return reversed string route
         random_string = "This is a test string"
         random_reversed_string = "gnirts tset a si sihT"
         self.assertEqual(random_reversed_string,
@@ -13,6 +14,7 @@ class TestMain(unittest.TestCase):
         )
 
     def test_get_mode(self):
+        # test get_mode route
         self.assertEqual(os.environ.get("MODE"), get_mode())
 
 
